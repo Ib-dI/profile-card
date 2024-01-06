@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 75%, 39%);
+    background-repeat: repeat-y;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.bulle-1{
+    z-index: 0;
+    position: absolute;
+    width: 100vw;
+    height: 1080px;
+    background-image: url(images/bg-pattern-top.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    left: -310px;
+    top: -500px;
+}
+.bulle-2{
+    z-index: 0;
+    position: absolute;
+    width: 100vw;
+    height: 1080px;
+    background-image: url(images/bg-pattern-top.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    right: -700px;
+    top: 200px;
+    transform: rotate(-25deg);
+}
+
+.container{
+    z-index: 50;
+    width: 320px;
+    height: 340px;
+    border-radius: .8rem;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+}
+.bg-img{
+    position: relative;
+
+    height: 130px;
+    background-image: url(images/bg-pattern-card.svg);
+}
+
+.name{
+    position: relative;
+    padding-top:60px;
+    font-size: 17px;
+}
+
+.par{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+.victor{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+    background-image: url(images/image-victor.jpg);
+    border-radius: 50%;
+    left: 110px;
+    bottom: 33px;
+    border: solid 4px hsl(0, 0%, 100%);
+}
+.age{
+    color: hsl(227, 10%, 46%);
+    font-weight: normal;
+}
+.city{
+    color: hsl(227, 10%, 46%);
+    font-size: 13px;
+}
+hr{
+    font-size: .5px;
+    margin-top: 25px;
+
+}
+.stats{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.each-stat{
+    display: flex;
+    flex-direction: column;
+}
+.number{
+    font-weight: 700;
+}
+
+.quality{
+    font-size: 12px;
+    color: hsl(227, 10%, 46%);
+
+}
+
+@media (max-width:375px) {
+    .bulle-1{
+        top: -600px;
+        left: -700px;
+        width: 1080px;
+    }
+    .bulle-2{
+        bottom: 100px;
+        left: 160px;
+        width: 1080px;
+        height: 1080px;
+    }
+    
+}
